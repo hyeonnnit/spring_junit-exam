@@ -34,6 +34,7 @@ public class BoardRepositoryTest {
         boardRepository.update(title,content,id);
         // then
         System.out.println(boardRepository.selectAll());
+
     }
     @Test
     public void selectAll_test() {
