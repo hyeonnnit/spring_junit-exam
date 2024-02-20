@@ -22,16 +22,18 @@ public class BoardRepositoryTest {
         // when
         boardRepository.delete(id);
         // then
+        System.out.println(boardRepository.selectAll());
     }
     @Test
     public void update_test(){
         // given
         int id = 1;
-        String title = "제목1";
-        String content = "내용1";
+        String title = "제목10";
+        String content = "내용10";
         // when
         boardRepository.update(title,content,id);
         // then
+        System.out.println(boardRepository.selectAll());
     }
     @Test
     public void selectAll_test() {
