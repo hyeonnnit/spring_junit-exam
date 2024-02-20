@@ -16,6 +16,24 @@ public class BoardRepositoryTest {
     private BoardRepository boardRepository;
 
     @Test
+    public void delete_test(){
+        // given
+        int id = 1;
+        // when
+        boardRepository.delete(id);
+        // then
+    }
+    @Test
+    public void update_test(){
+        // given
+        int id = 1;
+        String title = "제목1";
+        String content = "내용1";
+        // when
+        boardRepository.update(title,content,id);
+        // then
+    }
+    @Test
     public void selectAll_test() {
         // when
         List<Board> boardList = boardRepository.selectAll();
